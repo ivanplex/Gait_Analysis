@@ -1,0 +1,15 @@
+//Raw
+*.RAW
+*.raw
+*.PNG
+*.png
+*.JPG
+*.jpg
+*.JPEG
+*.jpeg
+
+//Java output
+out/
+
+//Marvin Library
+marvin/
