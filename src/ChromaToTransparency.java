@@ -12,7 +12,10 @@ import marvin.plugin.MarvinImagePlugin;
 import marvin.util.MarvinAttributes;
 import marvin.util.MarvinPluginLoader;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import java.util.List;
@@ -100,27 +103,48 @@ public class ChromaToTransparency {
         }
 
         //Highlight body segments
-        for (MarvinSegment seg: bodySegments) {
-            System.out.println("Size: "+ seg.area);
-            skinImage.drawRect(seg.x1, seg.y1, seg.width, seg.height, Color.yellow);
-            skinImage.drawRect(seg.x1+1, seg.y1+1, seg.width-2, seg.height-2, Color.yellow);
-            skinImage.drawRect(seg.x1+2, seg.y1+2, seg.width-4, seg.height-4, Color.yellow);
+
+        try {
+            BufferedImage bufferedSkinImage = ImageIO.read(new File("./res/", "skin.png"));
+
+            for (MarvinSegment seg : bodySegments) {
+                System.out.println("Size: " + seg.area);
+                drawBox(bufferedSkinImage,seg.x1,seg.y1,seg.width,seg.height,5,Color.yellow,"HEAD");
 
 
-            //person profile identification
-            if(seg.x1 < person_left){ person_left = seg.x1; }
-            if(seg.y1 < person_top){ person_top = seg.y1; }
-            if(seg.width+seg.x1 > person_right){ person_right = seg.width+seg.x1; }
-            if(seg.height+seg.y1 > person_bottom){ person_bottom = seg.height+seg.y1; }
+                //person profile identification
+                if (seg.x1 < person_left) {
+                    person_left = seg.x1;
+                }
+                if (seg.y1 < person_top) {
+                    person_top = seg.y1;
+                }
+                if (seg.width + seg.x1 > person_right) {
+                    person_right = seg.width + seg.x1;
+                }
+                if (seg.height + seg.y1 > person_bottom) {
+                    person_bottom = seg.height + seg.y1;
+                }
+            }
+
+            System.out.println("[" + person_left + " , " + person_top + "]");
+            System.out.println("[" + person_right + " , " + person_bottom + "]");
+
+            //Draw person profile
+            drawBox(bufferedSkinImage,person_left,person_top,
+                    person_right - person_left,person_bottom - person_top,
+                    2,Color.red,"");
+
+            skinImage = new MarvinImage(bufferedSkinImage);
+
+            MarvinImageIO.saveImage(skinImage, "./res/segment_analysis.png");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        System.out.println("["+person_left+" , "+person_top+"]");
-        System.out.println("["+person_right+" , "+person_bottom+"]");
 
-        //Draw person profile
-        skinImage.drawRect(person_left, person_top, person_right-person_left, person_bottom-person_top, Color.red);
-
-        MarvinImageIO.saveImage(skinImage, "./res/segment_analysis.png");
+        //TODO: Multimodel distribution
+        //TODO: jama , wexter
 
         return skinImage;
     }
@@ -239,6 +263,23 @@ public class ChromaToTransparency {
                 }
             }
         }
+    }
+
+    public void drawBox(BufferedImage image, int x, int y, int width, int height, int thickness, Color c, String text){
+
+        Graphics g = image.getGraphics();
+        g.setColor(c);
+        //Draw inwards
+        for(int i=0; i<thickness; i++) {
+            g.drawRect(x+i, y+i, width-i*2, height-i*2);
+        }
+
+        Font f = new Font("Dialog", Font.PLAIN, 30);
+        g.setFont(f);
+        g.drawString(text,x+thickness,y+30);
+
+
+        g.dispose();
     }
 
     public static void main(String[] args) {
