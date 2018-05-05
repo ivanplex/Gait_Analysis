@@ -25,7 +25,7 @@ public class ChromaToTransparency {
     public ChromaToTransparency(){
 
         //Load Image
-        MarvinImage image = MarvinImageIO.loadImage("training/018z058pf.jpg");
+        MarvinImage image = MarvinImageIO.loadImage("training/016z051pf.jpg");
 
         //Crop unwanted
         System.out.println("Cropping image.");
@@ -76,16 +76,10 @@ public class ChromaToTransparency {
 
         List<MarvinSegment> segments = Arrays.asList(floodfillSegmentation(image));
         // Show the largest 5 segments
-        MarvinSegmentComparator segmentComparator = new MarvinSegmentComparator();
+        BodyAreaSegmentComparator segmentComparator = new BodyAreaSegmentComparator();
         Collections.sort(segments,segmentComparator);
 
         System.out.println(segments.size()+" segment(s) found:");
-
-        //person profile identification variables
-        int person_top = skinImage.getHeight();
-        int person_left = skinImage.getWidth();
-        int person_right = 0;
-        int person_bottom = 0;
 
         List<MarvinSegment> bodySegments = new ArrayList<MarvinSegment>();
 
@@ -102,54 +96,44 @@ public class ChromaToTransparency {
             }
         }
 
-        //Highlight body segments
 
+        //Highlight body segments
         try {
             BufferedImage bufferedSkinImage = ImageIO.read(new File("./res/", "skin.png"));
 
-            for (MarvinSegment seg : bodySegments) {
-                System.out.println("Size: " + seg.area);
-                drawBox(bufferedSkinImage,seg.x1,seg.y1,seg.width,seg.height,5,Color.yellow,"HEAD");
+            BodySegmentsAnalysis bsa = new BodySegmentsAnalysis(skinImage);
+            Map<String,Set> classifiedSegments = bsa.classifySegments(bodySegments);
 
-
-                //person profile identification
-                if (seg.x1 < person_left) {
-                    person_left = seg.x1;
-                }
-                if (seg.y1 < person_top) {
-                    person_top = seg.y1;
-                }
-                if (seg.width + seg.x1 > person_right) {
-                    person_right = seg.width + seg.x1;
-                }
-                if (seg.height + seg.y1 > person_bottom) {
-                    person_bottom = seg.height + seg.y1;
+            Iterator it = classifiedSegments.entrySet().iterator();
+            while(it.hasNext()){
+                Map.Entry<String,Set<MarvinSegment>> pair = (Map.Entry)it.next();
+                for(MarvinSegment seg: pair.getValue()){
+                    drawBox(bufferedSkinImage,seg.x1,seg.y1,seg.width,seg.height,5,Color.yellow,pair.getKey());
                 }
             }
 
-            System.out.println("[" + person_left + " , " + person_top + "]");
-            System.out.println("[" + person_right + " , " + person_bottom + "]");
-
             //Draw person profile
-            drawBox(bufferedSkinImage,person_left,person_top,
-                    person_right - person_left,person_bottom - person_top,
+            drawBox(bufferedSkinImage,
+                    bsa.getLeftParimeter(),bsa.getTopParimeter(),
+                    bsa.getPersonWidth(),bsa.getPersonHeight(),
                     2,Color.red,"");
 
-            skinImage = new MarvinImage(bufferedSkinImage);
 
+            skinImage = new MarvinImage(bufferedSkinImage);
             MarvinImageIO.saveImage(skinImage, "./res/segment_analysis.png");
+
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-
-        //TODO: Multimodel distribution
         //TODO: jama , wexter
 
         return skinImage;
     }
 
-    public class MarvinSegmentComparator implements Comparator<MarvinSegment> {
+    public class BodyAreaSegmentComparator implements Comparator<MarvinSegment> {
 
         @Override
         public int compare(MarvinSegment firstSegment, MarvinSegment secondSegment) {

@@ -8,7 +8,7 @@ import java.awt.*;
 public class EdgeDetectionTest {
 
     public EdgeDetectionTest(){
-        MarvinImage image = MarvinImageIO.loadImage("training/022z075ps.jpg");
+        MarvinImage image = MarvinImageIO.loadImage("training/023z082ps.jpg");
         MarvinImage imageOut = new MarvinImage(image.getWidth(), image.getHeight());
 
         Color greenScreenColor = new Color(56, 175, 93);
