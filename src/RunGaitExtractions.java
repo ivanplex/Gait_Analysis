@@ -35,6 +35,6 @@ public class RunGaitExtractions {
     }
 
     public static void main(String[] args){
-        new RunGaitExtractions("./test/");
+        new RunGaitExtractions("./training/");
     }
 }
