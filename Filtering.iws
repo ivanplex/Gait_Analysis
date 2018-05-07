@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27754358-907e-47d0-b527-4741bddb74a3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/RunGaitExtractions.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/SubjectGaitExtraction.java" />
-      <change beforePath="$PROJECT_DIR$/Filtering.iws" afterPath="$PROJECT_DIR$/Filtering.iws" />
-      <change beforePath="$PROJECT_DIR$/src/ChromaToTransparency.java" afterPath="" />
-    </list>
+    <list default="true" id="27754358-907e-47d0-b527-4741bddb74a3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -416,12 +411,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525171030281</updated>
       <workItem from="1525171031945" duration="84336000" />
-      <workItem from="1525692776278" duration="5553000" />
+      <workItem from="1525692776278" duration="6037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89889000" />
+    <option name="totallyTimeSpent" value="90373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="85" width="3840" height="2075" extended-state="0" />
