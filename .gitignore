@@ -10,6 +10,7 @@
 
 //Java output
 out/
+res/
 
 //Marvin Library
 marvin/

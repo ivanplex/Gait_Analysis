@@ -1,24 +1,54 @@
 import marvin.image.MarvinImage;
+import marvin.image.MarvinSegment;
+import marvin.io.MarvinImageIO;
 
 public class BodyPart {
 
-    MarvinImage bodyPartImage;
+    MarvinSegment bodyPartImage;
     String bodyPart;
-    int left_distance;
-    int right_distance;
-    int top_distance;
-    int bottom_distance;
+    int leftParimeter;
+    int rightParimeter;
+    int topParimeter;
+    int bottomParimeter;
     int width;
     int height;
 
-    public BodyPart(MarvinImage bodyPartImage, String bodyPart, int left_distance, int right_distance, int top_distance, int bottom_distance) {
+    public BodyPart(MarvinSegment bodyPartImage, String bodyPart, int leftParimeter, int topParimeter) {
         this.bodyPartImage = bodyPartImage;
         this.bodyPart = bodyPart;
-        this.left_distance = left_distance;
-        this.right_distance = right_distance;
-        this.top_distance = top_distance;
-        this.bottom_distance = bottom_distance;
-        this.width = bodyPartImage.getWidth();
-        this.height = bodyPartImage.getHeight();
+        this.leftParimeter = leftParimeter;
+        this.rightParimeter = leftParimeter+bodyPartImage.width;
+        this.topParimeter = topParimeter;
+        this.bottomParimeter = topParimeter + bodyPartImage.height;
+        this.width = bodyPartImage.width;
+        this.height = bodyPartImage.width;
+    }
+
+    public String getBodyPart() {
+        return bodyPart;
+    }
+
+    public int getLeftParimeter() {
+        return leftParimeter;
+    }
+
+    public int getRightParimeter() {
+        return rightParimeter;
+    }
+
+    public int getTopParimeter() {
+        return topParimeter;
+    }
+
+    public int getBottomParimeter() {
+        return bottomParimeter;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 }

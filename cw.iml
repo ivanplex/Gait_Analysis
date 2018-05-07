@@ -11,5 +11,6 @@
     <orderEntry type="library" name="marvin" level="project" />
     <orderEntry type="library" name="jfreechart-1.0.19-demo" level="project" />
     <orderEntry type="library" name="com.github.sh0nk:matplotlib4j:0.4.0" level="project" />
+    <orderEntry type="library" name="org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
   </component>
 </module>

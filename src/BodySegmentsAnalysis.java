@@ -1,7 +1,9 @@
 import marvin.image.MarvinImage;
 import marvin.image.MarvinSegment;
 import marvin.io.MarvinImageIO;
+import org.codehaus.jackson.map.ObjectMapper;
 
+import java.io.File;
 import java.util.*;
 
 import static marvin.MarvinPluginCollection.crop;
@@ -9,6 +11,7 @@ import static marvin.MarvinPluginCollection.crop;
 public class BodySegmentsAnalysis {
 
     MarvinImage image;
+    String targetDirectory;
     Map<String,Set> classifiedSegments;
 
     int leftParimeter;
@@ -16,8 +19,9 @@ public class BodySegmentsAnalysis {
     int topParimeter;
     int bottomParimeter;
 
-    public BodySegmentsAnalysis(MarvinImage img){
+    public BodySegmentsAnalysis(MarvinImage img, String targetDirectory){
         this.image = img;
+        this.targetDirectory = targetDirectory;
 
         topParimeter=img.getHeight();
         leftParimeter=img.getWidth();
@@ -69,6 +73,7 @@ public class BodySegmentsAnalysis {
             commitBodySet(bodySet);
         }
 
+        exportToJSON(classifiedSegments);
         return classifiedSegments;
     }
 
@@ -111,7 +116,34 @@ public class BodySegmentsAnalysis {
                 this.getRightParimeter() - this.getLeftParimeter(),
                 this.getBottomParimeter() - this.getTopParimeter()
         );
-        MarvinImageIO.saveImage(personCrop, "./res/person_cropped.png");
+        MarvinImageIO.saveImage(personCrop, "./"+targetDirectory+"/person_cropped.png");
+    }
+
+    private void exportToJSON(Map<String,Set> classifiedSegments){
+
+        ObjectMapper mapper = new ObjectMapper();
+        Subject subject = new Subject(new File(targetDirectory).getName());
+
+        Iterator it = classifiedSegments.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<String,Set<MarvinSegment>> pair = (Map.Entry)it.next();
+            for(MarvinSegment seg: pair.getValue()){
+                subject.addBodyPart(new BodyPart(seg,pair.getKey(),seg.x1,seg.y1));
+            }
+        }
+
+        try {
+            //Object to JSON in file
+            mapper.writeValue(new File("./"+targetDirectory+"/features.json"), subject);
+
+            //Object to JSON in String
+            String jsonInString = mapper.writeValueAsString(subject);
+        }catch (Exception e){
+
+        }
+
+
+
     }
 
     public int getLeftParimeter() {

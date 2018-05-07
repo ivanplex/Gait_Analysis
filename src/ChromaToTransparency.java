@@ -22,21 +22,29 @@ import java.util.List;
 
 public class ChromaToTransparency {
 
+    String imgPath = "test/DSC00165.JPG";
+    String filename = new File(imgPath).getName();
+    String targetDirectory = "analysis/"+filename;
+
     public ChromaToTransparency(){
 
+        //Create file directory
+        new File("./"+targetDirectory).mkdirs();
+
+
         //Load Image
-        MarvinImage image = MarvinImageIO.loadImage("training/016z051pf.jpg");
+        MarvinImage image = MarvinImageIO.loadImage(imgPath);
 
         //Crop unwanted
         System.out.println("Cropping image.");
         MarvinImage croppedImage = cropImage(image, 300,30,520,350);
-        MarvinImageIO.saveImage(croppedImage, "./res/crop.png");
+//        MarvinImageIO.saveImage(croppedImage, "./res/crop.png");
 
         //Extract skin tone area
         System.out.println("Extracting person skin tone");
         MarvinImage skinImage = new MarvinImage(croppedImage.getWidth(), croppedImage.getHeight());
         extractSkintone(croppedImage, skinImage);
-        MarvinImageIO.saveImage(skinImage, "./res/skin.png");
+        MarvinImageIO.saveImage(skinImage, "./"+targetDirectory+"/skin.png");
 
         //Segment identification
         System.out.println("Segment Identification");
@@ -48,12 +56,12 @@ public class ChromaToTransparency {
         MarvinImage outlineImage = foregroundImage.clone();
         outlineImage.clear(0xFF000000);
         roberts(croppedImage, outlineImage);
-        MarvinImageIO.saveImage(outlineImage, "./res/edgeDetection.jpg");
+        MarvinImageIO.saveImage(outlineImage, "./"+targetDirectory+"/edgeDetection.jpg");
 
         //Merge photo
         MarvinImage combinedImage = new MarvinImage(croppedImage.getWidth(), croppedImage.getHeight());
         combineByTransparency(outlineImage,skinImage,combinedImage,0,0,50);
-        MarvinImageIO.saveImage(combinedImage, "./res/combined.jpg");
+        MarvinImageIO.saveImage(combinedImage, "./"+targetDirectory+"/combined.jpg");
 
     }
 
@@ -71,7 +79,7 @@ public class ChromaToTransparency {
 
         // 4. Morphological closing to group separated parts of the same object
         morphologicalClosing(bin.clone(), bin, MarvinMath.getTrueMatrix(30, 30));
-        // 5. Use Floodfill segmention to get image segments
+        // 5. Use Floodfill segmention to get image segmentsanaylysis
         image = MarvinColorModelConverter.binaryToRgb(bin);
 
         List<MarvinSegment> segments = Arrays.asList(floodfillSegmentation(image));
@@ -99,9 +107,9 @@ public class ChromaToTransparency {
 
         //Highlight body segments
         try {
-            BufferedImage bufferedSkinImage = ImageIO.read(new File("./res/", "skin.png"));
+            BufferedImage bufferedSkinImage = ImageIO.read(new File("./"+targetDirectory+"/", "skin.png"));
 
-            BodySegmentsAnalysis bsa = new BodySegmentsAnalysis(skinImage);
+            BodySegmentsAnalysis bsa = new BodySegmentsAnalysis(skinImage,targetDirectory);
             Map<String,Set> classifiedSegments = bsa.classifySegments(bodySegments);
 
             Iterator it = classifiedSegments.entrySet().iterator();
@@ -120,7 +128,7 @@ public class ChromaToTransparency {
 
 
             skinImage = new MarvinImage(bufferedSkinImage);
-            MarvinImageIO.saveImage(skinImage, "./res/segment_analysis.png");
+            MarvinImageIO.saveImage(skinImage, "./"+targetDirectory+"/segment_analysis.png");
 
 
 
@@ -149,13 +157,13 @@ public class ChromaToTransparency {
 
         // 1. Convert green to transparency
         greenToTransparency(image, imageOut);
-        MarvinImageIO.saveImage(imageOut, "./res/person_chroma_out1.png");
+//        MarvinImageIO.saveImage(imageOut, "./res/person_chroma_out1.png");
         // 2. Reduce remaining green pixels
         reduceGreen(imageOut);
-        MarvinImageIO.saveImage(imageOut, "./res/person_chroma_out2.png");
+//        MarvinImageIO.saveImage(imageOut, "./res/person_chroma_out2.png");
         // 3. Apply alpha to the boundary
         alphaBoundary(imageOut, 6);
-        MarvinImageIO.saveImage(imageOut, "./res/person_chroma_out3.png");
+//        MarvinImageIO.saveImage(imageOut, "./res/person_chroma_out3.png");
 
         return imageOut;
     }
