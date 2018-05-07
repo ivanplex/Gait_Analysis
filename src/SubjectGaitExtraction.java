@@ -1,16 +1,8 @@
-import static marvin.MarvinPluginCollection.*;
-
-import com.github.sh0nk.matplotlib4j.NumpyUtils;
-import com.github.sh0nk.matplotlib4j.Plot;
-import com.github.sh0nk.matplotlib4j.PythonExecutionException;
-import com.github.sh0nk.matplotlib4j.builder.ContourBuilder;
-import marvin.image.*;
-import marvin.io.*;
-import marvin.color.*;
+import marvin.color.MarvinColorModelConverter;
+import marvin.image.MarvinImage;
+import marvin.image.MarvinSegment;
+import marvin.io.MarvinImageIO;
 import marvin.math.MarvinMath;
-import marvin.plugin.MarvinImagePlugin;
-import marvin.util.MarvinAttributes;
-import marvin.util.MarvinPluginLoader;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -20,17 +12,29 @@ import java.io.IOException;
 import java.util.*;
 import java.util.List;
 
-public class ChromaToTransparency {
+import static marvin.MarvinPluginCollection.*;
+import static marvin.MarvinPluginCollection.alphaBoundary;
+import static marvin.MarvinPluginCollection.crop;
 
-    String imgPath = "test/DSC00165.JPG";
-    String filename = new File(imgPath).getName();
-    String targetDirectory = "analysis/"+filename;
 
-    public ChromaToTransparency(){
+public class SubjectGaitExtraction {
 
+    String imgPath;
+    String filename;
+    String targetDirectory;
+
+    public SubjectGaitExtraction(String imgPath){
+        this.imgPath = imgPath;
+
+        filename = new File(imgPath).getName();
+        targetDirectory = "analysis/"+filename;
+
+        analyse();
+    }
+
+    private void analyse(){
         //Create file directory
         new File("./"+targetDirectory).mkdirs();
-
 
         //Load Image
         MarvinImage image = MarvinImageIO.loadImage(imgPath);
@@ -62,7 +66,6 @@ public class ChromaToTransparency {
         MarvinImage combinedImage = new MarvinImage(croppedImage.getWidth(), croppedImage.getHeight());
         combineByTransparency(outlineImage,skinImage,combinedImage,0,0,50);
         MarvinImageIO.saveImage(combinedImage, "./"+targetDirectory+"/combined.jpg");
-
     }
 
     public MarvinImage segmentation(MarvinImage skinImage){
@@ -116,7 +119,7 @@ public class ChromaToTransparency {
             while(it.hasNext()){
                 Map.Entry<String,Set<MarvinSegment>> pair = (Map.Entry)it.next();
                 for(MarvinSegment seg: pair.getValue()){
-                    drawBox(bufferedSkinImage,seg.x1,seg.y1,seg.width,seg.height,5,Color.yellow,pair.getKey());
+                    drawBox(bufferedSkinImage,seg.x1,seg.y1,seg.width,seg.height,5, Color.yellow,pair.getKey());
                 }
             }
 
@@ -272,9 +275,5 @@ public class ChromaToTransparency {
 
 
         g.dispose();
-    }
-
-    public static void main(String[] args) {
-        new ChromaToTransparency();
     }
 }
