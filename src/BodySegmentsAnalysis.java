@@ -142,8 +142,6 @@ public class BodySegmentsAnalysis {
 
         }
 
-
-
     }
 
     public int getLeftParimeter() {

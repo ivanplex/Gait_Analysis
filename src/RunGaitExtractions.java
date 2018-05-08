@@ -37,6 +37,7 @@ public class RunGaitExtractions {
 
     public static void main(String[] args){
         RunGaitExtractions extractions = new RunGaitExtractions("./training/");
-        extractions.performExtraction("./training/016z050pf.jpg");
+        //extractions.traverseDirectory();
+        extractions.performExtraction("./training/021z010pf.jpg");
     }
 }

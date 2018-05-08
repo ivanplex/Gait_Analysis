@@ -3,15 +3,34 @@
   <component name="ChangeListManager">
     <list default="true" id="27754358-907e-47d0-b527-4741bddb74a3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Filtering.iws" afterPath="$PROJECT_DIR$/Filtering.iws" />
+      <change beforePath="$PROJECT_DIR$/analysis/016z050pf.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/016z050pf.jpg/combined.jpg" />
+      <change beforePath="$PROJECT_DIR$/analysis/016z050pf.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/016z050pf.jpg/features.json" />
+      <change beforePath="$PROJECT_DIR$/analysis/016z050pf.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/016z050pf.jpg/segment_analysis.png" />
       <change beforePath="$PROJECT_DIR$/analysis/016z050pf.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/016z050pf.jpg/skin.png" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z053pf.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/017z053pf.jpg/combined.jpg" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z053pf.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/017z053pf.jpg/features.json" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z053pf.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/017z053pf.jpg/segment_analysis.png" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z053pf.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/017z053pf.jpg/skin.png" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z054pf.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/017z054pf.jpg/combined.jpg" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z054pf.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/017z054pf.jpg/features.json" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z054pf.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/017z054pf.jpg/segment_analysis.png" />
-      <change beforePath="$PROJECT_DIR$/analysis/017z054pf.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/017z054pf.jpg/skin.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z006ps.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/021z006ps.jpg/combined.jpg" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z006ps.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/021z006ps.jpg/features.json" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z006ps.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/021z006ps.jpg/segment_analysis.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z006ps.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/021z006ps.jpg/skin.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008pf.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/021z008pf.jpg/combined.jpg" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008pf.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/021z008pf.jpg/features.json" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008pf.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/021z008pf.jpg/segment_analysis.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008pf.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/021z008pf.jpg/skin.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008ps.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/021z008ps.jpg/combined.jpg" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008ps.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/021z008ps.jpg/features.json" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008ps.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/021z008ps.jpg/segment_analysis.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z008ps.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/021z008ps.jpg/skin.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z010pf.jpg/combined.jpg" afterPath="$PROJECT_DIR$/analysis/021z010pf.jpg/combined.jpg" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z010pf.jpg/features.json" afterPath="$PROJECT_DIR$/analysis/021z010pf.jpg/features.json" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z010pf.jpg/segment_analysis.png" afterPath="$PROJECT_DIR$/analysis/021z010pf.jpg/segment_analysis.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/021z010pf.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/021z010pf.jpg/skin.png" />
+      <change beforePath="$PROJECT_DIR$/analysis/022z073ps.jpg/skin.png" afterPath="$PROJECT_DIR$/analysis/022z073ps.jpg/skin.png" />
+      <change beforePath="$PROJECT_DIR$/report/latex.aux" afterPath="$PROJECT_DIR$/report/latex.aux" />
+      <change beforePath="$PROJECT_DIR$/report/latex.log" afterPath="$PROJECT_DIR$/report/latex.log" />
+      <change beforePath="$PROJECT_DIR$/report/latex.pdf" afterPath="$PROJECT_DIR$/report/latex.pdf" />
+      <change beforePath="$PROJECT_DIR$/report/latex.synctex.gz" afterPath="$PROJECT_DIR$/report/latex.synctex.gz" />
+      <change beforePath="$PROJECT_DIR$/report/latex.tex" afterPath="$PROJECT_DIR$/report/latex.tex" />
+      <change beforePath="$PROJECT_DIR$/src/BodySegmentsAnalysis.java" afterPath="$PROJECT_DIR$/src/BodySegmentsAnalysis.java" />
+      <change beforePath="$PROJECT_DIR$/src/BrightnessTest.java" afterPath="$PROJECT_DIR$/src/BrightnessTest.java" />
       <change beforePath="$PROJECT_DIR$/src/RunGaitExtractions.java" afterPath="$PROJECT_DIR$/src/RunGaitExtractions.java" />
       <change beforePath="$PROJECT_DIR$/src/SubjectGaitExtraction.java" afterPath="$PROJECT_DIR$/src/SubjectGaitExtraction.java" />
     </list>
@@ -25,27 +44,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="SubjectGaitExtraction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SubjectGaitExtraction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SubjectGaitExtraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
+            <state relative-caret-position="396">
+              <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3562#3577#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrightnessTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BrightnessTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BrightnessTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#616#617#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +74,8 @@
       <file leaf-file-name="RunGaitExtractions.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RunGaitExtractions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+            <state relative-caret-position="580">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="e#128#129#0" expanded="true" />
                 <element signature="e#170#171#0" expanded="true" />
@@ -64,11 +84,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="noName.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analysis/021z008ps.jpg/noName.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BodySegmentsAnalysis.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BodySegmentsAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="50" column="99" lean-forward="true" selection-start-line="50" selection-start-column="99" selection-end-line="50" selection-end-column="99" />
+            <state relative-caret-position="800">
+              <caret line="142" column="9" lean-forward="false" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -87,6 +114,8 @@
     <findStrings>
       <find>reduceGreen</find>
       <find>filename</find>
+      <find>remove</find>
+      <find>rober</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -111,9 +140,9 @@
         <option value="$PROJECT_DIR$/src/TestBodyParts.java" />
         <option value="$PROJECT_DIR$/res/subject.json" />
         <option value="$PROJECT_DIR$/src/BodyPart.java" />
-        <option value="$PROJECT_DIR$/src/BodySegmentsAnalysis.java" />
         <option value="$PROJECT_DIR$/src/BrightnessTest.java" />
         <option value="$PROJECT_DIR$/src/SubjectGaitExtraction.java" />
+        <option value="$PROJECT_DIR$/src/BodySegmentsAnalysis.java" />
         <option value="$PROJECT_DIR$/src/RunGaitExtractions.java" />
       </list>
     </option>
@@ -145,10 +174,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,6 +194,12 @@
               <item name="cw" type="462c0819:PsiDirectoryNode" />
               <item name="analysis" type="462c0819:PsiDirectoryNode" />
               <item name="016z050pf.jpg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Filtering" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cw" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="021z008ps.jpg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Filtering" type="b2602c69:ProjectViewProjectNode" />
@@ -200,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,14 +445,16 @@
       <updated>1525171030281</updated>
       <workItem from="1525171031945" duration="84336000" />
       <workItem from="1525692776278" duration="22709000" />
+      <workItem from="1525774392905" duration="15011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107045000" />
+    <option name="totallyTimeSpent" value="122056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="85" width="3840" height="2075" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -428,7 +465,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2647059" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647059" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -459,11 +496,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/training/018z062pf.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/DSC00169.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -596,43 +628,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/person_chroma_out3.png" />
     <entry file="file://$PROJECT_DIR$/res/crop.png" />
-    <entry file="file://$PROJECT_DIR$/res/bodyPart.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestBodyParts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/subject.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="686" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/res/bodyPart.json" />
+    <entry file="file://$PROJECT_DIR$/src/Body.java" />
+    <entry file="file://$PROJECT_DIR$/src/TestBodyParts.java" />
+    <entry file="file://$PROJECT_DIR$/res/subject.json" />
     <entry file="file://$PROJECT_DIR$/analysis/DSC00165.JPG/features.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="441" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,19 +655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ChromaToTransparency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="279" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/016z050pf.jpg/skin.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChromaToTransparency.java" />
     <entry file="file://$PROJECT_DIR$/src/BodyPart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -729,10 +720,20 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/segment_analysis.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/016z050pf.jpg/skin.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/RunGaitExtractions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        <state relative-caret-position="580">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="e#128#129#0" expanded="true" />
             <element signature="e#170#171#0" expanded="true" />
@@ -740,37 +741,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrightnessTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/segment_analysis.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BodySegmentsAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="50" column="99" lean-forward="true" selection-start-line="50" selection-start-column="99" selection-end-line="50" selection-end-column="99" />
+        <state relative-caret-position="800">
+          <caret line="142" column="9" lean-forward="false" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/021z008ps.jpg/noName.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SubjectGaitExtraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
+        <state relative-caret-position="396">
+          <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3562#3577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrightnessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#616#617#0" expanded="true" />
           </folding>
         </state>
       </provider>

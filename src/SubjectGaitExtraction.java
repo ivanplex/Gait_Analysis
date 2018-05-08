@@ -40,7 +40,7 @@ public class SubjectGaitExtraction {
         //Crop unwanted
         System.out.println("Cropping image.");
         MarvinImage croppedImage = cropImage(image, 300,30,520,350);
-//        MarvinImageIO.saveImage(croppedImage, "./res/crop.png");
+        MarvinImageIO.saveImage(croppedImage, "./"+targetDirectory+"/cropped.jpg");
 
         //Extract skin tone area
         System.out.println("Extracting person skin tone");
@@ -55,6 +55,7 @@ public class SubjectGaitExtraction {
         //Outline analysis
         System.out.println("Foreground identification");
         MarvinImage foregroundImage = removeGreenScreen(croppedImage);
+        MarvinImageIO.saveImage(foregroundImage, "./"+targetDirectory+"/noGreen.jpg");
         MarvinImage outlineImage = foregroundImage.clone();
         outlineImage.clear(0xFF000000);
         roberts(croppedImage, outlineImage);
@@ -70,7 +71,7 @@ public class SubjectGaitExtraction {
 
         int maxNumSegmentsWanted = 5;
         int minFeatureSize = 2200;    //Pixel squared
-        int maxFeatureSize = (skinImage.getHeight()*skinImage.getWidth())/25;
+        int maxFeatureSize = (skinImage.getHeight()*skinImage.getWidth())/36;
 
         MarvinImage image = skinImage.clone();
 
@@ -130,7 +131,6 @@ public class SubjectGaitExtraction {
 
             skinImage = new MarvinImage(bufferedSkinImage);
             MarvinImageIO.saveImage(skinImage, "./"+targetDirectory+"/segment_analysis.png");
-
 
 
         } catch (IOException e) {
@@ -204,7 +204,7 @@ public class SubjectGaitExtraction {
                 double[] hsv = MarvinColorModelConverter.rgbToHsv(new int[]{color});
 
                 if(hsv[0] >= 0 && hsv[0] <= 25 &&
-                        hsv[1] >= 0.23 && hsv[1] <= 0.98
+                        hsv[1] >= 0.4 && hsv[1] <= 0.98
                         && hsv[2] >= 0.22){
                     imageOut.setIntColor(x, y, color);
                 }

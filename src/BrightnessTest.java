@@ -4,9 +4,11 @@ import marvin.io.MarvinImageIO;
 public class BrightnessTest {
 
     public BrightnessTest(){
-        MarvinImage imageIn = MarvinImageIO.loadImage("./analysis/017z054pf.jpg/skin.png");
+
+        String path = "./analysis/017z054pf.jpg/skin.png";
+        MarvinImage imageIn = MarvinImageIO.loadImage(path);
         MarvinImage imageOut = new MarvinImage(imageIn.getWidth(),imageIn.getHeight());
-        SubjectGaitExtraction sge = new SubjectGaitExtraction("./analysis/017z054pf.jpg/skin.png");
+        SubjectGaitExtraction sge = new SubjectGaitExtraction(path);
         sge.extractSkintone(imageIn,imageOut);
         MarvinImageIO.saveImage(imageOut, "./analysis/017z054pf.jpg/skin.png");
     }
