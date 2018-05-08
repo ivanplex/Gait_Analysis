@@ -7,11 +7,10 @@ public class RunGaitExtractions {
 
     public RunGaitExtractions(String directory){
         this.directory = directory;
-
-        traverseDirectory();
     }
 
-    private void traverseDirectory(){
+
+    public void traverseDirectory(){
         File dir = new File(directory);
         File[] directoryListing = dir.listFiles();
 
@@ -27,14 +26,17 @@ public class RunGaitExtractions {
         }
     }
 
+
     private void performExtraction(String path){
         System.out.println(".......Processing image: "+path+" ........");
 
-        new SubjectGaitExtraction(path);
+        SubjectGaitExtraction sge = new SubjectGaitExtraction(path);
+        sge.analyse();
         System.out.println(".......              END               ........");
     }
 
     public static void main(String[] args){
-        new RunGaitExtractions("./training/");
+        RunGaitExtractions extractions = new RunGaitExtractions("./training/");
+        extractions.performExtraction("./training/016z050pf.jpg");
     }
 }

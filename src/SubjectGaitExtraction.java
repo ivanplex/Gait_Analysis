@@ -28,11 +28,9 @@ public class SubjectGaitExtraction {
 
         filename = new File(imgPath).getName();
         targetDirectory = "analysis/"+filename;
-
-        analyse();
     }
 
-    private void analyse(){
+    public void analyse(){
         //Create file directory
         new File("./"+targetDirectory).mkdirs();
 
@@ -71,8 +69,8 @@ public class SubjectGaitExtraction {
     public MarvinImage segmentation(MarvinImage skinImage){
 
         int maxNumSegmentsWanted = 5;
-        int minFeatureSize = 2500;    //Pixel squared
-        int maxFeatureSize = (skinImage.getHeight()*skinImage.getWidth())/4;
+        int minFeatureSize = 2200;    //Pixel squared
+        int maxFeatureSize = (skinImage.getHeight()*skinImage.getWidth())/25;
 
         MarvinImage image = skinImage.clone();
 
@@ -193,7 +191,7 @@ public class SubjectGaitExtraction {
         return croppedImage;
     }
 
-    private void extractSkintone(MarvinImage imageIn, MarvinImage imageOut){
+    public void extractSkintone(MarvinImage imageIn, MarvinImage imageOut){
         //https://arxiv.org/pdf/1708.02694.pdf
         for(int y=0; y<imageIn.getHeight(); y++){
             for(int x=0; x<imageIn.getWidth(); x++){
@@ -207,7 +205,7 @@ public class SubjectGaitExtraction {
 
                 if(hsv[0] >= 0 && hsv[0] <= 25 &&
                         hsv[1] >= 0.23 && hsv[1] <= 0.98
-                        && hsv[2] >= 0.1){
+                        && hsv[2] >= 0.22){
                     imageOut.setIntColor(x, y, color);
                 }
                 else{
