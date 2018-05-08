@@ -1,4 +1,4 @@
-\documentclass[12pt,journal,compsoc]{IEEEtran}
+\documentclass[10pt,journal,compsoc]{IEEEtran}
 
 \newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
 pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
@@ -84,7 +84,8 @@ Subsubsection text here.
 \subsection{Green screen and background removal}
 Our domain is a set of photos each with a subject in front of a green screen standing on a treadmill. Subject extraction requires the removal of the green screen as well as any background captured outside of the green screen area. Couple of samples of green screen color reveals the average screen color to be \textit{rgb(56, 175, 93)}. Image area beyond the green screen area is cropped to remove excess background area. 
 
-
+\subsection{Skin tone extraction}
+Subject's limbs are extracted according to their skin tone. This extraction is done by analysing the HSV value of every pixel in the image. Where 0 \textless \textit{Hue} \textless 25, 0.23 \textless \textit{Saturation} \textless  0.98 and \textit{Value} \textgreater 0.22.
 
 
 
