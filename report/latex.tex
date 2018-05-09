@@ -5,18 +5,15 @@ pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
 colorlinks=true,linkcolor={black},citecolor={black},urlcolor={black},
 pdftitle={Bare Demo of IEEEtran.cls for Computer Society Journals},%<!CHANGE!
 pdfsubject={Typesetting},%<!CHANGE!
-pdfauthor={Michael D. Shell},%<!CHANGE!
+pdfauthor={Man-Leong Chan},%<!CHANGE!
 pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,
              template}}%<^!CHANGE!
 
 
 \usepackage{graphicx}
-\graphicspath{{res/}}
+\graphicspath{{res/}{graph/}}
 \usepackage{caption}
 \usepackage{subcaption}
-
-% correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
 
 
 \begin{document}
@@ -25,29 +22,13 @@ pdfkeywords={Computer Society, IEEEtran, journal, LaTeX, paper,
 
 \author{Man-Leong Chan,~\IEEEmembership{University of Southampton}}
 
-
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell is with the Department
-of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-GA, 30332.\protect\\
-% note need leading \protect in front of \\ to get a newline within \thanks as
-% \\ is fragile and will error, could use \hfil\break instead.
-E-mail: see http://www.michaelshell.org/contact.html
-\IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-\thanks{Manuscript received April 19, 2005; revised December 27, 2012.}
-
-
-% The paper headers
-\markboth{Recognising people using body shape analysis, Biometric, May~2018}%
-{Shell \MakeLowercase{\textit{et al.}}: Bare Advanced Demo of IEEEtran.cls for Journals}
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-The abstract goes here.
+We present a combination of 2 methods for analysing a person's body shape and ultimately attempt to identify subjects from a set of photos by recognision. Silhouette and limb position analysis provides us metrics of the person's standing posture, which is used in our recongition algorithm. 
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-Computer Society, IEEEtran, journal, \LaTeX, paper, template.
-\end{IEEEkeywords}}
+}
 
 
 % make the title area
@@ -59,27 +40,7 @@ Computer Society, IEEEtran, journal, \LaTeX, paper, template.
 
 \section{Introduction}
 
-
-
-\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
-for IEEE Computer Society journal papers produced under \LaTeX\ using
-IEEEtran.cls version 1.8 and later.
-% You must have at least 2 lines in the paragraph with the drop letter
-% (should never be an issue)
-I wish you the best of success.
-
-\hfill mds
- 
-\hfill December 27, 2012
-
-\subsection{Subsection Heading Here}
-Subsection text here.
-
-% needed in second column of first page if using \IEEEpubid
-%\IEEEpubidadjcol
-
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+Given a set of images each with a subject standing in front of a green screen with one facing forward and another facing sideways, we can recongnise a person's body shape and attempt to identify them individually. This involve extracting the subject from an image, generating subject's metrics and finally identification.  
 
 
 
@@ -109,7 +70,7 @@ Our domain is a set of photos each with a subject in front of a green screen sta
 
 
 \subsection{Skin tone extraction}
-Subject's limbs were extracted according to their skin tone. This extraction was done by analysing the HSV value of every pixel in the image. Where 0 \textless\textit{Hue} \textless25, 0.50 \textless\textit{Saturation} \textless0.98 and \textit{Value} \textgreater0.22. Our hue control selected skin tone from a range of color angles, it allowed the algorithm to be inclusive with a range of skin colour of different race and background. Saturation controled the range of colour sharpness which was crucial for our algorithm to differentiate between skin colour and shadows. The subject's skin surface under a reasonably well litted environment would have a higher saturation value than clothing in beige or brown.
+Subject's limbs were extracted according to their skin tone. This extraction was done by analysing the HSV value of every pixel in the image. Where 0 \textless\textit{Hue} \textless25, 0.50 \textless\textit{Saturation} \textless0.98 and \textit{Value} \textgreater0.22. Our hue control selected skin tone from a range of color angles, it allowed the algorithm to be inclusive with a range of skin colour of different race and background\cite{Kolkur2017}. Saturation controled the range of colour sharpness which was crucial for our algorithm to differentiate between skin colour and shadows. The subject's skin surface under a reasonably well litted environment would have a higher saturation value than clothing in beige or brown.
 
 \begin{figure}[!htb]
 \begin{subfigure}[h]{0.45\linewidth}
@@ -128,7 +89,7 @@ Obviously tone extraction obviously relied on the subject exposing some part of 
 
 
 \subsection{Limb Segmentation}
-Skin tone extraction gave us many fragments of skin color in different sizes. The larger fragments gave us more interesting ideas on what those limbs could be, where as the smaller fragments scattered across the image could be noise which so happened to have the same HSV values as our subject's skin.
+Skin tone extraction gave us many fragments of skin color in different sizes. The larger fragments gave us more interesting ideas on what those limbs could be, where as the smaller fragments scattered across the image could be noise which so happened to have the same HSV values as our subject's skin.\cite{Marvin}
 \\ \\
 In order to carry out further analysis, we had to outline our desired fragments which were potentially part of subject's limbs. A floodfill analysis was used to determine the outline of those potential targets. It determined fragments which were connected in this 2 dimentional pixel array and output the outline of each fragments. Fragments which are smaller than any desired features were ignored to reduce noise in the data. 
 \\ \\
@@ -186,19 +147,60 @@ The end result of both limb analysis and silhouette extraction has allowed us to
     \caption{Silhouette with limb analysis}
 \end{figure}
 
+Positional data of each subject including their limbs were stored in a seperate JSON file to aid subject identification in later parts.
+
+
+
+\section{Subject identification}
+
+
+\subsection{Domain}
+
+\subsubsection{Silouette data}
+From our silhouette extraction, we can measure the width of a subject and occationally the height of the subject. A simple metric that we can measure is the surface area of the person, obviously this is not a great idea as the subject's surface area depends on how close the subject is standing (scaling problem). A better idea was to calculate the ratio of height against their width. This can give us a brief estimate of the person's body ratio, in other words if the person is short and
+wide or tall and skinny. However we could not assume this measurement was always available. The noise generated from the bottom of the image did not allow us to collect reliable information of the subject's feet, therefore we cannot accurately determine the subject's height. One way to get around the problem is to uniformly measure each subject to the lowest point of their leg. This on the other hand struggles from inconsistancy between subject wearing trousers and shorts, which affects if
+the lower limb data is available. Nevertheless, this data is used whenever available during our identification phase.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.7\linewidth]{heightWideRatio}
+    \caption{Silouette identification analysis}
+\end{figure}
+
+
+\subsubsection{Front facing limb analysis}
+Instead of analysing the ratio between the subject's height and width, limb positional analysis provides much better results. We compared two main metrics when applicable.
+
+\begin{itemize}
+    \item horizontal position of where the head is relative to their arms. Everyone has a slightly different standing posture, this determines if one of your arm is extending further than the other. 
+    \item the top position of the arm area. Again, depending on the subject's standing posture, one of their arm is naturally raised higher than the other. \cite{Mittal2011}
+\end{itemize}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\linewidth]{frontFacing}
+    \caption{Height difference of 5px between subject's arm}
+\end{figure}
+
+The diagram below demonstrate the head position being a better metrics than height-width ratio as there is no error bar involved. The image has been scaled by 25-times its original size for visual purposes.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=1\linewidth]{front1}
+    \caption{Head position relative to arm (mid-points)}
+\end{figure}
+
+After experimenting with vertical positional difference between arms, we discovered the maximum detected difference is only 12 pixel apart, therefore unsuitable for subject identification.
+
+
+
+
+\subsubsection{Side facing limb analysis}
+Side facing image analysis overall had much better results than front facing images, 51 out of 52 images identified all limbs correctly. This allowed us to run analysis with extra confidence. 
 
 
 \section{Conclusion}
 The conclusion goes here.
-
-
-\appendices
-\section{Proof of the First Zonklar Equation}
-Appendix one text goes here.
-
-
-\section{}
-Appendix two text goes here.
 
 
 % use section* for acknowledgement
@@ -218,27 +220,8 @@ The authors would like to thank
   \newpage
 \fi
 
-\begin{thebibliography}{1}
-
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
-
-
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
-\end{IEEEbiography}
-
-% if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
-
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+\bibliographystyle{plain}
+\bibliography{bibtex}
 
 \end{document}
 

@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{Marvin}
+{Marvin Project}.
+\newblock 2018.
+
+\bibitem{Kolkur2017}
+S.~Kolkur, D.~Kalbande, P.~Shimpi, C.~Bapat, and J.~Jatakia.
+\newblock {Human Skin Detection Using RGB, HSV and YCbCr Color Models}.
+\newblock 2017.
+
+\bibitem{Mittal2011}
+Arpit Mittal, Andrew Zisserman, and Phil Torr.
+\newblock {\em {Hand detection using multiple proposals}}.
+\newblock 2011.
+
+\end{thebibliography}

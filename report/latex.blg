@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: latex.aux
+The style file: plain.bst
+Database file #1: bibtex.bib
+Warning--to sort, need author or key in Marvin
+Warning--empty author in Marvin
+Warning--empty journal in Marvin
+Warning--empty journal in Kolkur2017
+Warning--empty publisher in Mittal2011
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            511 strings with 4292 characters,
+and the built_in function-call counts, 798 in all, are:
+= -- 66
+> -- 47
+< -- 0
++ -- 19
+- -- 16
+* -- 57
+:= -- 141
+add.period$ -- 8
+call.type$ -- 3
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 8
+duplicate$ -- 32
+empty$ -- 58
+format.name$ -- 16
+if$ -- 155
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 17
+num.names$ -- 4
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 14
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 15
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 5
+while$ -- 4
+width$ -- 4
+write$ -- 27
+(There were 5 warnings)

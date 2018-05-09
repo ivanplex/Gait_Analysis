@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.7)  8 MAY 2018 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.7)  9 MAY 2018 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -180,18 +180,18 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 ) (./latex.aux)
 \openout1 = `latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 -- Lines per column: 61 (exact).
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -265,143 +265,149 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 35.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 35.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 35.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
+)
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 54.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 54.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.03> on input line 54.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.62097> on input line 54.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.015> on input line 54.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 54
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 35.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 35
 .
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11.04124> on input line 54.
+(Font)              <11.04124> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.72884> on input line 54.
+(Font)              <7.72884> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.52061> on input line 54.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 54.
- (/usr/share/texmf-dist/tex/latex/psnfss/upzd.fd
+(Font)              <5.52061> on input line 35.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 35.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 60.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 60.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 75.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 81.
-<res/original.jpg, id=8, 2248.4pt x 1686.3pt>
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 50.
+<res/original.jpg, id=1, 2248.4pt x 1686.3pt>
 File: res/original.jpg Graphic file (type jpg)
 <use res/original.jpg>
-Package pdftex.def Info: res/original.jpg  used on input line 94.
+Package pdftex.def Info: res/original.jpg  used on input line 55.
 (pdftex.def)             Requested size: 75.88426pt x 56.89087pt.
-<res/cropped.jpg, id=9, 1375.1375pt x 1355.0625pt>
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 57.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9.53561> on input line 57.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6.6749> on input line 57.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <4.7678> on input line 57.
+<res/cropped.jpg, id=2, 1375.1375pt x 1355.0625pt>
 File: res/cropped.jpg Graphic file (type jpg)
 <use res/cropped.jpg>
-Package pdftex.def Info: res/cropped.jpg  used on input line 99.
+Package pdftex.def Info: res/cropped.jpg  used on input line 60.
 (pdftex.def)             Requested size: 75.88426pt x 74.76645pt.
-<res/noGreen.jpg, id=10, 1375.1375pt x 1355.0625pt>
+<res/noGreen.jpg, id=3, 1375.1375pt x 1355.0625pt>
 File: res/noGreen.jpg Graphic file (type jpg)
 <use res/noGreen.jpg>
-Package pdftex.def Info: res/noGreen.jpg  used on input line 104.
+Package pdftex.def Info: res/noGreen.jpg  used on input line 65.
 (pdftex.def)             Requested size: 75.88426pt x 74.76645pt.
-LaTeX Font Info:    Try loading font information for OML+ppl on input line 112.
-
+LaTeX Font Info:    Try loading font information for OML+ppl on input line 73.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/omlppl.fd
 File: omlppl.fd 
 )
 LaTeX Font Info:    Font shape `OML/ppl/m/n' in size <9.53561> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 112.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 73.
 File: res/noGreen.jpg Graphic file (type jpg)
 <use res/noGreen.jpg>
-Package pdftex.def Info: res/noGreen.jpg  used on input line 116.
+Package pdftex.def Info: res/noGreen.jpg  used on input line 77.
 (pdftex.def)             Requested size: 113.82446pt x 112.14967pt.
-<res/skin.png, id=11, 1375.1375pt x 1355.0625pt>
+<res/skin.png, id=4, 1375.1375pt x 1355.0625pt>
 File: res/skin.png Graphic file (type png)
 <use res/skin.png>
-Package pdftex.def Info: res/skin.png  used on input line 121.
+Package pdftex.def Info: res/skin.png  used on input line 82.
 (pdftex.def)             Requested size: 113.82446pt x 112.14967pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--137
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--137
+Underfull \hbox (badness 10000) in paragraph at lines 92--98
 
  []
 
-[2
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
 
  <./res/original.jpg> <./res/cropped.jpg> <./res/noGreen.jpg> <./res/skin.png>]
-<res/segment_analysis.png, id=23, 1375.1375pt x 1355.0625pt>
+<res/segment_analysis.png, id=20, 1375.1375pt x 1355.0625pt>
 File: res/segment_analysis.png Graphic file (type png)
 <use res/segment_analysis.png>
-Package pdftex.def Info: res/segment_analysis.png  used on input line 145.
+Package pdftex.def Info: res/segment_analysis.png  used on input line 106.
 (pdftex.def)             Requested size: 177.06071pt x 174.46883pt.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 110.
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--173
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
-<res/edgeDetectionComp.png, id=24, 2377.88374pt x 1108.14pt>
+<res/edgeDetectionComp.png, id=21, 2377.88374pt x 1108.14pt>
 File: res/edgeDetectionComp.png Graphic file (type png)
 <use res/edgeDetectionComp.png>
-Package pdftex.def Info: res/edgeDetectionComp.png  used on input line 176.
+Package pdftex.def Info: res/edgeDetectionComp.png  used on input line 137.
 (pdftex.def)             Requested size: 177.06071pt x 82.49818pt.
-<res/combined.jpg, id=25, 1375.1375pt x 1355.0625pt>
+<res/combined.jpg, id=22, 1375.1375pt x 1355.0625pt>
 File: res/combined.jpg Graphic file (type jpg)
 <use res/combined.jpg>
-Package pdftex.def Info: res/combined.jpg  used on input line 185.
+Package pdftex.def Info: res/combined.jpg  used on input line 146.
 (pdftex.def)             Requested size: 177.06071pt x 174.46883pt.
-[3 <./res/segment_analysis.png> <./res/edgeDetectionComp.png (PNG copy)> <./res
-/combined.jpg>] [4
-
-] (./latex.aux) ) 
+<graph/heightWideRatio.png, id=23, 903.375pt x 1442.5092pt>
+File: graph/heightWideRatio.png Graphic file (type png)
+<use graph/heightWideRatio.png>
+Package pdftex.def Info: graph/heightWideRatio.png  used on input line 166.
+(pdftex.def)             Requested size: 177.06071pt x 282.72987pt.
+[2 <./res/segment_analysis.png> <./res/edgeDetectionComp.png (PNG copy)> <./res
+/combined.jpg>]
+<res/frontFacing.jpg, id=28, 1375.1375pt x 1355.0625pt>
+File: res/frontFacing.jpg Graphic file (type jpg)
+<use res/frontFacing.jpg>
+Package pdftex.def Info: res/frontFacing.jpg  used on input line 181.
+(pdftex.def)             Requested size: 202.35675pt x 199.38408pt.
+<graph/front1.png, id=29, 903.375pt x 1442.5092pt>
+File: graph/front1.png Graphic file (type png)
+<use graph/front1.png>
+Package pdftex.def Info: graph/front1.png  used on input line 189.
+(pdftex.def)             Requested size: 252.94499pt x 403.89983pt.
+ (./latex.bbl) [3 <./graph/heightWideRatio.png> <./res/frontFacing.jpg> <./grap
+h/front1.png>] (./latex.aux) ) 
 Here is how much of TeX's memory you used:
- 3579 strings out of 492982
- 60555 string characters out of 6138580
- 124228 words of memory out of 5000000
- 7100 multiletter control sequences out of 15000+600000
- 52036 words of font info for 103 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 41i,8n,39p,788b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.
-pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texm
-f-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-dist/fonts/type1/
-urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplri8a
-.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on latex.pdf (4 pages, 4577325 bytes).
+ 3574 strings out of 492982
+ 60572 string characters out of 6138580
+ 124236 words of memory out of 5000000
+ 7097 multiletter control sequences out of 15000+600000
+ 45448 words of font info for 92 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,39p,805b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.en
+c}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/font
+s/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic
+/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/s
+hare/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/font
+s/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfdin
+g/uzdr.pfb>
+Output written on latex.pdf (3 pages, 4738674 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
