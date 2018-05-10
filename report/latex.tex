@@ -176,7 +176,7 @@ Instead of analysing the ratio between the subject's height and width, limb posi
     \item the top position of the arm area. Again, depending on the subject's standing posture, one of their arm is naturally raised higher than the other. \cite{Mittal2011}
 \end{itemize}
 
-\begin{figure}[!htb]
+\begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{frontFacing}
     \caption{Height difference of 5px between subject's arm}
@@ -184,7 +184,7 @@ Instead of analysing the ratio between the subject's height and width, limb posi
 
 The diagram below demonstrate the head position being a better metrics than height-width ratio as there is no error bar involved. The image has been scaled by 25-times its original size for visual purposes.
 
-\begin{figure}[!htb]
+\begin{figure}
 \centering
 \includegraphics[width=1\linewidth]{front1}
     \caption{Head position relative to arm (mid-points)}
@@ -196,29 +196,19 @@ After experimenting with vertical positional difference between arms, we discove
 
 
 \subsubsection{Side facing limb analysis}
-Side facing image analysis overall had much better results than front facing images, 51 out of 52 images identified all limbs correctly. This allowed us to run analysis with extra confidence. 
+Side facing image analysis overall had much better results than front facing images, 51 out of 52 images identified all limbs correctly. This allowed us to run analysis with extra confidence. We utilize the back of the subject arm and compared to the position of the subject's head. This measures of how much hunch the subject has in a up right position. 
+
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{headPosition}
+    \caption{Side view head position relative to the back of the arm}
+\end{figure}
 
 
 \section{Conclusion}
-The conclusion goes here.
+Limb extraction gave us very interesting metrics for measuring a person's standing posture and it has significant advantages compared to pure silouette analysis. While silouette analysis heavily rely on the camera's position, limb extraction provided very useful additional data to aid recognition analysis. Given the quality of the images, our algorithm still manages to extract the subject with reasonable reliability, and this signals the possibility of this approach in the future.
 
 
-% use section* for acknowledgement
-\ifCLASSOPTIONcompsoc
-  % The Computer Society usually uses the plural form
-  \section*{Acknowledgments}
-\else
-  % regular IEEE prefers the singular form
-  \section*{Acknowledgment}
-\fi
-
-
-The authors would like to thank
-
-
-\ifCLASSOPTIONcaptionsoff
-  \newpage
-\fi
 
 \bibliographystyle{plain}
 \bibliography{bibtex}
