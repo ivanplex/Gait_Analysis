@@ -38,23 +38,23 @@ This is a project supplementing my COMP6211 Biometic coursework.
     </th>
   </tr>
   <tr>
-    <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/edgeDetection.jpg" width="300px"/>
+    <th align="center"  width="300px">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/edgeDetection.jpg"/>
     </th>
-    <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/skin.png" width="300px"/>
+    <th align="center" width="300px">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/skin.png"/>
     </th> 
-    <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/segment_analysis.png" width="300px"/>
+    <th align="center" width="300px">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/segment_analysis.png"/>
     </th> 
   </tr>
   <tr>
-    <th align="center">
+    <th align="center" colspan="3">
     	Combined imagery
     </th> 
   </tr>
   <tr>
-    <th align="center">
+    <th align="center" colspan="3">
     	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/combined.jpg" width="500px"/>
     </th> 
   </tr>
