@@ -16,14 +16,14 @@ This is a project supplementing my COMP6211 Biometic coursework.
     </th>
   </tr>
   <tr>
-    <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/original.jpg" width="300px"/>
+    <th align="center" width="300px">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/original.jpg"/>
     </th>
-    <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" width="300px"/>
+    <th align="center" width="300px">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" />
     </th> 
-    <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg" width="300px"/>
+    <th align="center" width="300px">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg"/>
     </th> 
   </tr>
   <tr>
@@ -45,7 +45,7 @@ This is a project supplementing my COMP6211 Biometic coursework.
     	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/skin.png" width="300px"/>
     </th> 
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/" width="300px"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/segment_analysis.png" width="300px"/>
     </th> 
   </tr>
   <tr>
