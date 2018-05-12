@@ -3,11 +3,6 @@
 This is a project supplementing my COMP6211 Biometic coursework. 
 
 
-| ![alt text](https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/edgeDetection.jpg "Edge detection") | ![alt text](https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/skin.png "Segment extraction") | ![alt text](https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/segment_analysis.png "Segment analysis") |
-|  | Combined imagery |  |
-|  | ![alt text](https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/combined.jpg "Combined imagery") |  |
-
-
 <table style="width:100%">
   <tr>
     <th align="center">
@@ -25,10 +20,10 @@ This is a project supplementing my COMP6211 Biometic coursework.
     	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/original.jpg" width="300px"/>
     </th>
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" height="300px"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" width="300px"/>
     </th> 
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg" height="300px"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg" width="300px"/>
     </th> 
   </tr>
   <tr>
@@ -47,22 +42,20 @@ This is a project supplementing my COMP6211 Biometic coursework.
     	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/edgeDetection.jpg" width="300px"/>
     </th>
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/skin.png" height="300px"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/skin.png" width="300px"/>
     </th> 
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/" height="300px"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/" width="300px"/>
     </th> 
   </tr>
   <tr>
-    <th align="center"></th>
     <th align="center">
     	Combined imagery
     </th> 
-    <th align="center"></th>
   </tr>
   <tr>
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/combined.jpg" height="500px"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/combined.jpg" width="500px"/>
     </th> 
   </tr>
   
