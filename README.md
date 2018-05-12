@@ -25,13 +25,13 @@ This is a project supplementing my COMP6211 Biometic coursework.
   </tr>
   <tr>
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/original.jpg" width="30%"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/original.jpg" width="300px"/>
     </th>
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" height="30%"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" height="300px"/>
     </th> 
     <th align="center">
-    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg" height="30%"/>
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg" height="300px"/>
     </th> 
   </tr>
   
