@@ -11,3 +11,28 @@ This is a project supplementing my COMP6211 Biometic coursework.
 |  | ![alt text](https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/combined.jpg "Combined imagery") |  |
 
 
+<table style="width:100%">
+  <tr>
+    <th align="center">
+    	Original Image
+    </th>
+    <th align="center">
+    	Cropped
+    </th> 
+    <th>
+    	Green-screen removed
+    </th>
+  </tr>
+  <tr>
+    <th align="center">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/original.jpg" width="30%"/>
+    </th>
+    <th align="center">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/cropped.jpg" height="30%"/>
+    </th> 
+    <th align="center">
+    	<image src="https://github.com/ivanplex/Gait_Analysis/blob/master/report/res/noGreen.jpg" height="30%"/>
+    </th> 
+  </tr>
+  
+</table>
