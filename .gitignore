@@ -16,5 +16,5 @@ res/
 marvin/
 jfreechart-1.0.19/
 
-//Graph
+//Virtual environment for generating graphs in report
 report/graph/venv
