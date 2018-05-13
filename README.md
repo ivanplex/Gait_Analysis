@@ -60,3 +60,27 @@ This is a project supplementing my COMP6211 Biometic coursework.
   </tr>
   
 </table>
+
+
+## Other examples
+
+<table>
+  <tr>
+    <th align="center" width="300px">
+      <image src="https://github.com/ivanplex/Gait_Analysis/blob/master/analysis/016z050pf.jpg/combined.jpg"/>
+    </th> 
+    <th align="center" width="300px">
+      <image src="https://github.com/ivanplex/Gait_Analysis/blob/master/analysis/018z062pf.jpg/combined.jpg"/>
+    </th>
+     
+  </tr>
+    <th align="center" width="300px">
+      <image src="https://github.com/ivanplex/Gait_Analysis/blob/master/analysis/016z050ps.jpg/combined.jpg"/>
+    </th>
+    <th align="center" width="300px">
+      <image src="https://github.com/ivanplex/Gait_Analysis/blob/master/analysis/018z062ps.jpg/combined.jpg"/>
+    </th>
+  <tr>
+     
+  </tr>
+</table>
